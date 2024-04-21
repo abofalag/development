@@ -1,40 +1,408 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title> Development</title>
-</head>
-<style>
-body
-{
-background-image:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")
+    <title> amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body{
+            background-color: cyan;;
+        }
+.jj{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    cursor: pointer;
+
 
 }
-h1
+.jj:hover
 {
-color:white;
-font-size:42px;
+    color:white;
+    background-color:rgb(20, 146, 224);
 }
-h2
+.jj:active
 {
-color:orange;
-font-size:40px;
+    color: rgb(255, 0, 60);
 }
-h3
-{
-color:white;
-font-size:40px;
+.ww{
+    width: 400px;;
 }
-p
-{
-font-size:18px;
-color:white;
+.cart{border:solid ;width: 300px;}
+.information{
+    margin-top: 100px;
 }
-</style>
+.fa-solid fa-magnifying-glass fa-beat-fade{
+   background-color: blue;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-left: 60px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+}
+.ah{
+    color:black;
+}
+.online{
+    text-shadow: red;
+    color: rgb(15, 12, 175);
+    font-size: 20px;
+
+}
+
+.online:hover{
+    color: red;
+    
+}
+.amazon{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    vertical-align:text-top;
+
+
+}
+.im{
+  vertical-align: middle;
+}
+.a-amazon{
+  display:;
+}
+.tex{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+.pre , .tex{
+  cursor: pointer;
+  position: absolute;
+  border-radius: 0 3px 3px 0;
+user-select: none;
+top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+
+}
+.tex {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+    </style>
+</head>
 <body>
-<h1> Web Design &</h1>
-<h2> Development</h2>
-<h3> course</h3>
-<a href="https://www.facebook.com/people/احمدابوفلج-ادم/pfbid0268hsKPKSCWaxZCgmoiSB3ViLRBNqkcL3XZnN1jVsCPLb4V9K7tqE2kYXyGXVMiLZl/"<p> here my web design if you want any design send me in my facebook page</p></a>
-<button style="background-color:orange;font-size:20px"> JOIN US</button>
+<div class="jj">
+<a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwifotDfvcGFAxVYqmYCHX8PDp0YABAAGgJzbQ&ae=2&gclid=EAIaIQobChMIn6LQ373BhQMVWKpmAh1_Dw6dEAAYASAAEgIq3fD_BwE&ohost=www.google.com&cid=CAASJORorYrdQ3dTODD0wsl7_e4iCpN_ol8ZI0JHVxHdi9nHi9JUNQ&sig=AOD64_3VembheXaoyS4AqK55wMJoy9utxA&q&adurl&ved=2ahUKEwiI6MnfvcGFAxWXwjgGHez_B5sQ0Qx6BAgGEAE&nis=8&dct=1"><h1> ama<span style="color: orangered; text-align: center; "><i>Z</i></span>on</h1></a>
+<input onclick="document.getElementById('search').innerHTML=' Im happy you  are here  '" type="search" placeholder="search"; title="onclick"  class="ww"><i class="fa-solid fa-magnifying-glass fa-beat-fade" style="color: #000000;"></i>
+<h5> returns <br> &order</h5>
+<i class="fa-solid fa-cart-shopping"></i>
+<h6>cart</h6>
+
+</div>
+<p id="search"> welcome to my  shopping </p>
+<!-- new cart -->
+<div style="cursor: pointer;;display: flex;align-items: center; border: solid 1px black;justify-content: space-around; margin-top: 100px; ">
+    <div style=" border: 1px solid black;width: 200px;text-align: center;">
+        <img src="https://media.zid.store/0c01f4b3-f95c-42b8-b673-941240922ddd/6bb264f7-7712-443c-a10c-1d881dd33824.png" width="156px">
+        <h5> Black and Gray Athletic<br>Cotton Soc...</h5>
+        <i class="fa-solid fa-star"></i>
+    <h4> $10.90</h4>
+    <a href="https://ijawrab.com/products/شرابات-النادي-No-Pain-No-Gain"><button style="width: 3%;"> 1</button><br><br></a>
+    <button style="background-color: rgb(249, 230, 84); color: black; border-radius: 20px;border: none;"> add to cart </button>
+    </div>
+    <!--  -->
+    <div style=" border: 1px solid black;width: 200px;text-align: center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png" width="140px">
+        <h5> Intermediate Size ...........<br>
+            Basketball</h5>
+        <i class="fa-solid fa-star"></i>
+    <h4> $20.95</h4>
+    <a href="https://store.playstation.com/en-in/product/EP7550-CUSA45497_00-0242450875943629"><button style="width: 30px;"> 1</button><br><br></a>
+    <button style="background-color: rgb(249, 230, 84); color: black; border-radius: 20px;border: none;"> add to cart </button>
+    </div>
+    <!--  -->
+    <div style=" border: 1px solid black;width: 200px;text-align: center">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRmDr16EB_OF-vBzZqk00oMP7paq7x_00aY3LQhSY-3UxBzfgi4qYldwn3y9uGobMmTiqeSCRAI41JiMNJwvDUzqitZSN31TtXids1MVZ3q&usqp=CAc" width="140px">
+        <h5>Adults Plain Cotton T-------<br>
+            Shirt - 2 Pack</h5>
+        <i class="fa-solid fa-star"></i>
+    <h4> $7.99</h4>
+    <a href="https://www2.hm.com/en_in/productpage.0608945008.html"><button style="width: 30px;"> 1</button><br><br></a>
+    <button style="background-color: rgb(249, 230, 84); color: black; border-radius: 20px;border: none;"> add to cart </button>
+    </div>
+    <!--  -->
+    <div style=" border: 1px solid black;width: 200px;text-align: center">
+        <img src="https://media.croma.com/image/upload/v1655370905/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/253429_jx9ma4.png" width="80%">
+        <h5> 2 Slot Toaster ---------------------<br> Black</h5>
+        <i class="fa-solid fa-star"></i>
+    <h4> $18.99</h4>
+   <a href="https://www.samsung.com/in/washers-and-dryers/washing-machines/ww5300t-front-loading-eco-bubble-ai-control-auto-dispense-7kg-gray-ww70t502nan-tl/?cid=in_pd_ppc_google_ce-samsungwm-frontload-wm-dtc_sales_samsung-wm-all-2023_eshop-pmax-pla_01jan2023-na_1ur-501464l-2024-eshop-bau-ce-performancemax-cpc_pfm--21060052523------x--WW70T502NAN%2FTL&gad_source=1&gclid=EAIaIQobChMIpIbMypTBhQMV1cZMAh0xIA9HEAQYASABEgKNKfD_BwE"> <button style="width: 30px;"> 1</button><br><br></a>
+    <button style="background-color: rgb(249, 230, 84); color: black; border-radius: 20px;border: none;"> add to cart </button>
+    </div>
+    <!--  -->
+    <div style=" border: 1px solid black;width: 200px;text-align: center">
+        <img src="https://4.imimg.com/data4/RF/AR/MY-2785472/golden-plate-250x250.jpg" width="140px">
+        <h5> 6 Piece White Dinner------------<br>
+            Plate Set</h5>
+        <i class="fa-solid fa-star"></i>
+    <h4> $20.</h4>
+    <a href="https://www.indiamart.com/proddetail/golden-plate-3060165962.html"><button style="width: 30px;"> 1</button><br><br></a>
+    <button style="background-color: rgb(249, 230, 84); color: black; border-radius: 20px;border: none;"> add to cart </button>
+    </div>
+</div>
+
+
+<br><br><br>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img   src="https://t3.ftcdn.net/jpg/02/71/77/56/360_F_271775672_yo8ZgraN2IHGbfqP2k0PsLjwvmatUNUJ.jpg" style="width:90%">
+      
+    </div>   
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-974911.jpg&fm=jpg" style="width:90%">
+      
+    </div>
+    <div class="mySlides fade">
+      <img src="https://media.istockphoto.com/id/1369227756/photo/giggling-their-way-through-the-mall.jpg?s=612x612&w=0&k=20&c=QCk2FJg1m0bTFCOAvspDbCnM1p-NMMM7qdnPJXCwqH4=" style="width:90%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4/ 4</div>
+      <img src="https://t3.ftcdn.net/jpg/02/41/43/18/360_F_241431868_8DFQpCcmpEPVG0UvopdztOAd4a6Rqsoo.jpg" style="width:100%">
+      
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮....</a>
+    <a class="next" onclick="plusSlides(1)"> .....❯</a>
+    
+    </div>
+    <br>
+    
+   
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+// user
+
+let user
+document.getElementById("bu").onclick=function(){
+user = document.getElementById("inp").value;
+window.prompt("hello" + user);
+
+}
+// 
+
+  
+</script>
+<div class="shopp" style="margin-left: 30px; background-image: url(https://as2.ftcdn.net/v2/jpg/02/32/16/07/1000_F_232160763_FuTBWDd981tvYEJFXpFZtolm8l4ct0Nz.jpg);">
+  <h4 id="Ahmed"> welcome to A<span style="font-size: larger; color: rgb(229, 80, 11); text-shadow: rgb(60, 5, 155);">hm</span>ed shopping  </h4>
+  <input class="inp" type="text" placeholder="clik here two time  "  onclick="document.getElementById('Ahmed').innerHTML='by Arabic <br> 😍مرحبا بك😍<br><br> by English <br> welcome <br> this my number:👇🏼 if you wanna contact me<br> 464758673 '" style="background-color:rgb(216, 13, 179) ; border-radius:10px; border: none;padding: 10px"> 
+  <br>
+  <input type="text"id="inp">
+  <button id="bu">click here </button>
+  <br>
+
+
+<br>
+<h1> Describe shooping 🛒 🛍️</h1>
+<p> Shopping is an activity in which a customer browses the available goods<br>
+     or services presented by one or more retailers with<br>
+      the potential intent to purchase a suitable selection of<br>
+       them. A typology of shopper types has been developed by<br>
+        scholars which identifies one group of shoppers as <br>
+        recreational shoppers,[1] that is, those who enjoy <br>
+        shopping and view it as a leisure activity.[2]<br>
+    <a href="https://www.flipkart.com"><span class="onnn" >  Online shopping </span></a> has become a major disruptor in the <br>
+    retail industry[3] as consumers can now search for <br>
+    product information and place product orders across<br>
+     different regions. Online retailers deliver their <br>
+     products directly to the consumers' home, offices, <br>
+     or wherever they want. The B2C (business to consumer) <br>
+     process has made it easy for consumers to select any <br>
+     product online from a retailer's website and to have <br>
+     it delivered relatively quickly. Using online shopping <br>
+     methods, consumers do not need to consume energy by physically <br>
+     visiting physical stores. This way they save time and the cost of<br>
+      traveling. A retailer or a shop is a business that presents a selection<br>
+       of goods and offers to trade or sell them to customers for money or other
+        goods.</p><br>
+</div>
+
+
+
+
+<div class="sh" style="margin-left: 30px;">
+
+<h2> Some of famous online shoop in world</h2>
+
+<h1>1-Amazon</h1>
+
+<h2>What is Amazon?</h2>
+
+<p style="color: rgb(5, 34, 255);text-shadow: blue 100px;background-image: url(https://c8.alamy.com/comp/2GTAYP6/modified-photo-of-parcel-with-amazon-logo-in-the-shopping-cart-on-a-blue-background-2GTAYP6.jpg);">  <span style="font-size: 20px; color: rgb(6, 6, 90);padding-top: 900px;"></span><br><br><br><br><br><br>
+   <br> Amazon <a href="https://www.amazon.com"><span style="color: rgb(8, 0, 255);" >(Amazon.com) </span></a> world's largest online retailer and a prominent cloud service provider.
+    
+    Originally started as an online bookselling company, <br> 
+    Amazon has morphed into an internet-based business enterprise that is largely focused on providing e-commerce, cloud computing, <br>digital streaming and artificial intelligence<br> (AI) services.
+    
+    Following an Amazon-to-buyer sales approach, <br>the company offers a monumental product range and inventory, enabling consumers to buy just about anything,<br> including clothing, beauty supplies, gourmet food, jewelry, <br>books, movies, electronics, pet supplies, furniture, <br>toys, garden supplies and household goods.
+    
+    Headquartered in Seattle, Amazon has individual websites,<br> software development centers, <br>customer service centers, data centers and fulfillment centers around the world.
+    
+    </p>
+</div>
+
+
+
+
+
+<div class="information"style="margin-left: 30px">
+<h1 > Inter your Information </h1>
+<h2> Enter your  name <br><input type="text" placeholder="Enter your  name"></h2>
+<h2> Enter your  number <br><input type="number" placeholder="Enter your  number"></h2>
+<h2> Enter your  email <br><input type="email" placeholder="Enter your  email"></h2>
+<h2> Enter your brithday <br><input type="date" placeholder="Enter your  brithday"></h2>
+<select name="" id="">
+<option value="Mail">Mail
+<option value="Fmail">Fmail
+</select>
+<input type="checkbox">
+<video src="https://www.youtube.com/watch?v=2exKokkn8o0">
+</video>
+<a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=674842289437&hvpos=&hvnetw=g&hvrand=11806934153316124982&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007768&hvtargid=kwd-10573980&hydadcr=14453_2316415&gad_source=1"><input type="submit"></a>
+<br>
+
+</div>
+
+
 </body>
+<br><br><br>
+
 </html>
